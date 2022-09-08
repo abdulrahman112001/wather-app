@@ -14,7 +14,7 @@ const forceCast = (lat,long,callback)=>{
         // console.log()
        }
        else{
-        callback(undefined,'in ' + response.body.location.name + ' temp is ' + response.body.current.temp_c)
+        callback(undefined,'in ' + response.body.location.country + ' temp is ' + response.body.current.temp_c)
         // console.log('in ' + response.body.location.name + ' temp is ' + response.body.current.temp_c)
        }
     
