@@ -14,12 +14,10 @@ request({url,json:true},(error,response)=>{
     else if(response.body.message){
         callback(response.body.message,undefined)
         // console.log(response.body.message)
-
     }
     else if(response.body.features.length == 0){
         callback('invalid search ',undefined)
         // console.log('invalid search ')
-
     }
     else{
 
@@ -29,7 +27,7 @@ request({url,json:true},(error,response)=>{
         callback(undefined,{
             lang,lat
         })
-        // console.log(lang,lat)
+        console.log(lang,lat)
     }
 })
 })
